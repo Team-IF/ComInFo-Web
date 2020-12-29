@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>ComInFo</title>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+        <script>
+
+            window.onload = function() {
+                
+                fetch('http://localhost:18382')
+                    .then(function(respo) {
+                        return respo.json()
+
+                    })
+                    
+                    .then(function(res) {
+                        // console.log(res.ram)
+
+                        document.getElementById('hostname_').innerText = res.hostname
+                        document.getElementById('ostype_').innerText = res.type
+                        document.getElementById('platform_').innerText = res.platform
+                        document.getElementById('uptime_').innerText = res.uptime
+                        document.getElementById('cpu_').innerText = res.cpu
+                        document.getElementById('ram_').innerText = res.ram
+                        document.getElementById('gpu_').innerText = res.gpu
+		            })
+
+                    .catch(function(error) {
+                        console.log(error)
+                    })
+
+            }
+        </script>
+    </head>
+
+    <body>
+    
+        <div class="title_wall">
+
+            <!-- <button type="button" class="btn btn-light darkMode" onclick="location.href='/dark'">Dark Mode</button> -->
+            
+            <div class="title">ComInFo</div>
+            <div class="sub-title">컴퓨터의 간단한 정보를 쉽게 알아보기</div>
+
+        </div>
+        
+        <div class="solidD">
+            <div class="solid"></div>
+        </div>
+        
+        <div class="infoValues">
+
+            <div class="one hoverable z-depth-1-half">
+                <div class="info">Host Name</div>
+                <div id="hostname_" class="value"></div>
+            </div>
+
+            <div class="one hoverable z-depth-1-half">
+                <div class="info">Os Type</div>
+                <div id="ostype_" class="value"></div>
+            </div>
+
+            <div class="one hoverable z-depth-1-half">
+                <div class="info">Platform</div>
+                <div id="platform_" class="value"></div>
+            </div>
+
+            <div class="one hoverable z-depth-1-half">
+                <div class="info">CPU</div>
+                <div id="cpu_" class="value"></div>
+            </div>
+            
+            <div class="one hoverable z-depth-1-half">
+                <div class="info">RAM</div>
+                <div id="ram_" class="value"></div>
+            </div>
+
+            <div class="one hoverable z-depth-1-half">
+                <div class="info">Up Time</div>
+                <div id="uptime_" class="value"></div>
+            </div>
+
+            <div class="one hoverable z-depth-1-half">
+                <div class="info">GPU</div>
+                <div id="gpu_" class="value"></div>
+            </div>
+        </div>
+        
+        <div class="end">
+            <img class="teamIf" src="./img/if.png">
+            <div class="textEnd">
+                <div class="copyright">ⓒ 2020 Team IF.</div>
+                <div class="teamMembers">Iro | Dia | Aroxu</div>
+            </div>
+            
+        </div>
+
+    </body>
+</html>
