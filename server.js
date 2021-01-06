@@ -3,7 +3,8 @@ const express = require('express')
 const app = express()
 const cors = require('cors')()
 const os = require('os')
-const gpuInfo = require('gpu-info')
+// const gpuInfo = require('gpu-info')
+const gpuInfo = require('@jedithepro/system-info')
 
 let cpuName = os.cpus()
 let _Gpu = []
@@ -22,10 +23,20 @@ const info = {
 app.use(cors)
 
 app.get('/', (_, res) => {
-    gpuInfo().then(data => { _Gpu = data
-        info.gpu = _Gpu.map(x => x.Name).join('\n')
+    // gpuInfo().then(data => { _Gpu = data
+    //     info.gpu = _Gpu.map(x => x.Name).join('\n')
+    //     res.send(info)
+    // })
+
+    gpuInfo.graphics().then(data => { _Gpu = data
+        // console.log(_Gpu.controllers.map(x => x.model).join('\n'))
+
+        info.gpu = _Gpu.controllers.map(x => x.model).join('\n')
         res.send(info)
-    })
+        
+    }).catch(error => console.log(error))
+
+    // info.gpu = _Gpu.map(x => x.Name).join('\n')
 
 })
 
