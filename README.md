@@ -2,7 +2,7 @@
 
  - Nodejs로 제작
  - 99% 모바일 반응형
- - 다크모드 지원
+ - 다크모드 지원 (개발중)
  - 현재 개발중...
 
 **node_modules**
@@ -10,5 +10,7 @@
  - os
  - path
  - ejs
+ - ~~gpu-info~~ (윈도우만 지원하여 밑에 모듈로 변경)
+ - @jedithepro/system-info
 
 ⓒ 2020 TEAM IF
