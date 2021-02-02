@@ -9,6 +9,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bluebird": "^3.7.2",
+    "mdbootstrap": "^4.19.2",
     "vue": "^3.0.5"
   },
   "devDependencies": {

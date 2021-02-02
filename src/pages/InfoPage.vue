@@ -32,6 +32,7 @@
 <script lang="ts">
 import {defineComponent, onMounted, reactive} from 'vue'
 import InfoCard from '../components/InfoCard.vue'
+import axios from "axios";
 
 export default defineComponent({
   name: 'InfoPage',
@@ -39,9 +40,19 @@ export default defineComponent({
     InfoCard
   },
   setup() {
-    onMounted(() => {
-      // TODO: use axios to get hwinfo
-      hwinfo.hostname = "aa"
+    onMounted(async () => {
+      try {
+        const response = (await axios.get("http://localhost:18382")).data
+        hwinfo.hostname = response.hostname
+        hwinfo.os = response.type
+        hwinfo.platform = response.platform
+        hwinfo.cpu = response.cpu
+        hwinfo.ram = Math.ceil(parseInt(response.ram) / 1073741824) + "GB"
+        hwinfo.gpu = response.gpu
+        hwinfo.uptime = String(response.uptime)
+      } catch (error) {
+        console.error(error);
+      }
     })
     const hwinfo = reactive({
       hostname: '',
