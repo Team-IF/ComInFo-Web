@@ -1,14 +1,17 @@
 {
   "name": "cominfo-web",
   "version": "0.0.0",
+  "license": "AGPL-3.0-or-later",
   "scripts": {
     "dev": "vite",
     "build": "vuedx-typecheck . && vite build",
     "serve": "vite preview"
   },
   "dependencies": {
+    "@popperjs/core": "^2.6.0",
     "axios": "^0.21.1",
     "bluebird": "^3.7.2",
+    "bootstrap": "^5.0.0-beta1",
     "mdbootstrap": "^4.19.2",
     "vue": "^3.0.5"
   },
