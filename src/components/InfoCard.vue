@@ -1,7 +1,7 @@
 <template>
-  <div class="one hoverable z-depth-1-half">
-    <div class="info">{{ name }}</div>
-    <div class="value">{{ content }}</div>
+  <div class="one box-shadow-extra-large">
+    <div class="info-title text-gray-dark">{{ name }}</div>
+    <div class="value text-gray-dark">{{ content }}</div>
   </div>
 </template>
 
@@ -26,15 +26,15 @@ export default defineComponent({
 <style>
 .one {
   margin: 20px;
-  /* border-radius: 20px; */
+  border-radius: 20px;
   /* background: #ECEFF4; */
-  background: white;
+  background: #ffffff;
   width: 400px;
   height: 200px;
   text-align: center;
 }
 
-.info {
+.info-title {
   font-size: 20px;
   font-weight: bolder;
   margin: 20px;

@@ -30,151 +30,159 @@
 </template>
 
 <script lang="ts">
-import {defineComponent, onMounted, reactive} from 'vue'
-import InfoCard from '../components/InfoCard.vue'
-import axios from "axios";
+  import {defineComponent, onMounted, reactive} from 'vue'
+  import InfoCard from '../components/InfoCard.vue'
+  import axios from "axios";
 
-export default defineComponent({
-  name: 'InfoPage',
-  components: {
-    InfoCard
-  },
-  setup() {
-    onMounted(async () => {
-      try {
-        const response = (await axios.get("http://localhost:18382")).data
-        hwinfo.hostname = response.hostname
-        hwinfo.os = response.type
-        hwinfo.platform = response.platform
-        hwinfo.cpu = response.cpu
-        hwinfo.ram = Math.ceil(parseInt(response.ram) / 1073741824) + "GB"
-        hwinfo.gpu = response.gpu
-        hwinfo.uptime = String(response.uptime)
-      } catch (error) {
-        console.error(error);
+  export default defineComponent({
+    name: 'InfoPage',
+    components: {
+      InfoCard
+    },
+    setup() {
+      onMounted(async () => {
+        try {
+          const response = (await axios.get("http://localhost:18382")).data
+          hwinfo.hostname = response.hostname
+          hwinfo.os = response.type
+          hwinfo.platform = response.platform
+          hwinfo.cpu = response.cpu
+          hwinfo.ram = Math.ceil(parseInt(response.ram) / 1073741824) + "GB"
+          hwinfo.gpu = response.gpu
+          hwinfo.uptime = String(response.uptime)
+
+          setInterval(() => hwinfo.uptime = String(response.uptime += 1), 1000)
+
+        } catch (error) {
+          console.error(error);
+        }
+      })
+      const hwinfo = reactive({
+        hostname: '',
+        os: '',
+        platform: '',
+        cpu: '',
+        ram: '',
+        uptime: '',
+        gpu: '',
+      })
+      return {
+        hwinfo
       }
-    })
-    const hwinfo = reactive({
-      hostname: '',
-      os: '',
-      platform: '',
-      cpu: '',
-      ram: '',
-      uptime: '',
-      gpu: '',
-    })
-    return {
-      hwinfo
+    },
+    computed: {
+      uptime() {
+        return this.hwinfo
+      }
     }
-  }
-})
+  })
 </script>
 
 <style>
-body {
-  background: rgb(248, 246, 246);
-  margin: 0;
-  padding: 0;
+  body {
+    background: rgb(241, 241, 241);
+    margin: 0;
+    padding: 0;
 
-}
+  }
 
-.title_wall {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  /* background: #434C5E; */
-  /* background: #D8DEE9; */
-  margin-top: 0;
-  margin-bottom: 50px;
-  z-index: 1;
+  .title_wall {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    /* background: #434C5E; */
+    /* background: #D8DEE9; */
+    margin-top: 0;
+    margin-bottom: 50px;
+    z-index: 1;
 
-}
+  }
 
-/*
-.solidD {
-} */
+  /*
+  .solidD {
+  } */
 
-.solid {
-  /* position: relative;
-  left: 50%;
-  transform: translate(50%); */
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  .solid {
+    /* position: relative;
+    left: 50%;
+    transform: translate(50%); */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 
-  background: rgb(182, 182, 182);
-  width: 80%;
-  height: 1px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+    background: rgb(182, 182, 182);
+    width: 80%;
+    height: 1px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 
-}
+  }
 
-/* .darkMode {
-    position: absolute;
-    top: 1%;
-    left: 0.5%;
-} */
+  /* .darkMode {
+      position: absolute;
+      top: 1%;
+      left: 0.5%;
+  } */
 
-.title {
-  position: relative;
-  color: black;
-  font-size: 60px;
-  /* text-align: center; */
-  top: 45%;
-  text-align: center;
-}
+  .title {
+    position: relative;
+    color: black;
+    font-size: 60px;
+    /* text-align: center; */
+    top: 45%;
+    text-align: center;
+  }
 
-.sub-title {
-  position: relative;
-  color: black;
-  font-size: 20px;
-  /* text-align: center; */
-  top: 45%;
-  text-align: center;
-}
+  .sub-title {
+    position: relative;
+    color: black;
+    font-size: 20px;
+    /* text-align: center; */
+    top: 45%;
+    text-align: center;
+  }
 
-.infoValues {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 200px;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
-  vertical-align: center;;
-}
+  .infoValues {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;;
+  }
 
 
-.end {
-  position: relative;
-  margin-top: 200px;
-  background: rgb(226, 226, 226);
-  width: 100%;
-  height: 150px;
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-}
+  .end {
+    position: relative;
+    margin-top: 200px;
+    background: rgb(226, 226, 226);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
 
-.teamIf {
-  margin: 10px;
-  width: auto;
-  height: auto;
-  max-width: 130px;
-  max-height: 140px;
-}
+  .teamIf {
+    margin: 10px;
+    width: auto;
+    height: auto;
+    max-width: 130px;
+    max-height: 140px;
+  }
 
-.textEnd {
-  font-size: 30px;
+  .textEnd {
+    font-size: 30px;
 
-}
+  }
 
-.copyright {
-  font-weight: bold;
-}
+  .copyright {
+    font-weight: bold;
+  }
 
-.teamMembers {
-  font-weight: bolder;
-}
+  .teamMembers {
+    font-weight: bolder;
+  }
 
 </style>
