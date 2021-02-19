@@ -1,14 +1,19 @@
 <template>
+
+  <loading-page/>
+
   <info-page/>
 </template>
 
 <script lang="ts">
 import {defineComponent} from 'vue'
 import InfoPage from './pages/InfoPage.vue'
+import LoadingPage from "./components/loadingPage.vue";
 
 export default defineComponent({
   name: 'App',
   components: {
+    LoadingPage,
     InfoPage
   }
 })

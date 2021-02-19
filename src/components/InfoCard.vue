@@ -32,7 +32,6 @@ export default defineComponent({
   width: 400px;
   height: 200px;
   text-align: center;
-  z-index: 3;
 }
 
 .info-title {

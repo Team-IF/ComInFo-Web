@@ -13,10 +13,10 @@
        <span>ComInFo</span>
       </a>
     </div>
-    <a href="https://teamif.io/" class="Header-item teamLink" style="text-decoration:none; color: #b6b6b6;">
+    <a href="https://teamif.io/" class="Header-item teamLink" target="_blank" style="text-decoration:none; color: #b6b6b6;">
       Team
     </a>
-    <a href="https://github.com/Team-IF/ComInFo-Web" class="Header-item githubLink" style="text-decoration:none; color: #cecece;">
+    <a href="https://github.com/Team-IF/ComInFo-Web" class="Header-item githubLink" target="_blank" style="text-decoration:none; color: #cecece;">
       About
     </a>
   </div>
