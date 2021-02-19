@@ -38,7 +38,7 @@
   <div class="end">
     <div class="endText mainEnd" style="color: white;">Team IF © 2021</div>
     <div class="linkEnd">
-    <a class="endText" href="https://github.com/Team-IF" style="color: white; text-decoration:none;">Github</a>
+    <a class="endText" href="https://github.com/Team-IF" target="_blank" style="color: white; text-decoration:none;">Github</a>
     <div style="color: white;">&nbsp;`&nbsp;</div>
     <a class="endText" href="https://twitter.com/Team_IF_" target="_blank" style="color: white; text-decoration:none;">Twitter</a>
     </div>
