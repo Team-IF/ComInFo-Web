@@ -216,13 +216,13 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.1.tgz#7f554e7368c9ab679a11f4a042ca17149d70cf12"
   integrity sha512-DvJbbn3dUgMxDnJLH+RZQPnXak1h4ZVYQ7CWiFWjQwBFkVajT4rfw2PdpHLTSTwxrYfnoEXkuBiwkDm6tPMQeA==
 
-"@primer/css@^16.0.2":
-  version "16.0.2"
-  resolved "https://registry.yarnpkg.com/@primer/css/-/css-16.0.2.tgz#f59060f160bf284927c8452f1cc03374e5d89812"
-  integrity sha512-9QOrsWf31RiMnVWgkY7DA30pk6L6KKZJNoeU5CaxJQMPgf9IH48oTBpCAbFc1377x/DwA7pLxLIf+5tQbpdneQ==
+"@primer/css@^16.1.2":
+  version "16.1.2"
+  resolved "https://registry.yarnpkg.com/@primer/css/-/css-16.1.2.tgz#ca766e0db8380ebf23c14e76120fb005e56e4bd9"
+  integrity sha512-Hl8x1RK/vYSW48y/nGNISHd7QYn6iPtLj1Fvqd8fiEKBTP1nUqB8pMvygG6HfEhT1lBJhTCnf1QcvLnSSkXw8A==
   dependencies:
     "@primer/octicons" "^9.1.1"
-    "@primer/primitives" "^4.0.1"
+    "@primer/primitives" "4.1.0"
 
 "@primer/octicons@^9.1.1":
   version "9.6.0"
@@ -231,10 +231,10 @@
   dependencies:
     object-assign "^4.1.1"
 
-"@primer/primitives@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@primer/primitives/-/primitives-4.0.1.tgz#87dae25cc075dd1b38a06d5d91bdfd4b22ea1abf"
-  integrity sha512-TFbO/duRByLSGsCuDRo5Qgd+NOZmMKCB+au32ZHgGfn9KDdlGbbwvGKOx6c56jRWDCHk27aRL2bG4Hc9tFgHpA==
+"@primer/primitives@4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@primer/primitives/-/primitives-4.1.0.tgz#33d83b38e2021f294f446c41bca65f5d7ffd898a"
+  integrity sha512-bACUj3Xl2z5dnYKE/76BpNqN4/JXFngf26dbb7Goph2PU5wcf+Z2Kk3nXwtJPGG8JByO+FcU3gpZjLNoyuLMHQ==
 
 "@sentry/core@5.30.0":
   version "5.30.0"
