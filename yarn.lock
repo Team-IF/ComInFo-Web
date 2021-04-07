@@ -216,25 +216,25 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.1.tgz#7f554e7368c9ab679a11f4a042ca17149d70cf12"
   integrity sha512-DvJbbn3dUgMxDnJLH+RZQPnXak1h4ZVYQ7CWiFWjQwBFkVajT4rfw2PdpHLTSTwxrYfnoEXkuBiwkDm6tPMQeA==
 
-"@primer/css@^16.0.2":
-  version "16.0.2"
-  resolved "https://registry.yarnpkg.com/@primer/css/-/css-16.0.2.tgz#f59060f160bf284927c8452f1cc03374e5d89812"
-  integrity sha512-9QOrsWf31RiMnVWgkY7DA30pk6L6KKZJNoeU5CaxJQMPgf9IH48oTBpCAbFc1377x/DwA7pLxLIf+5tQbpdneQ==
+"@primer/css@^16.2.0":
+  version "16.2.0"
+  resolved "https://registry.yarnpkg.com/@primer/css/-/css-16.2.0.tgz#c858b8328aa554281541b0b0a8dc2683610c6ffe"
+  integrity sha512-nELaaTJAuDBfyoHuz9c5P3ALDVavt/BSyAAa7KEpyi9S3BupYSitCwGkcJE+U6LtCUzHoqv31N9R2eJJxTgCyQ==
   dependencies:
-    "@primer/octicons" "^9.1.1"
-    "@primer/primitives" "^4.0.1"
+    "@primer/octicons" "12.1.0"
+    "@primer/primitives" "4.2.0"
 
-"@primer/octicons@^9.1.1":
-  version "9.6.0"
-  resolved "https://registry.yarnpkg.com/@primer/octicons/-/octicons-9.6.0.tgz#e195f2dd5f30b6918ad5d8ff224c12f778d02408"
-  integrity sha512-B5Wzk5izRXXz0JqEXJkVUtqhCXSpUKgqYkVwegMkp5sziBW+ksd9LPbONlCWyyLODwf9GsI2sBXekR7m+JJDBw==
+"@primer/octicons@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@primer/octicons/-/octicons-12.1.0.tgz#770c8395dc54604637c56ccb261707f9e9d59ddb"
+  integrity sha512-jayKLMTCx/0zh4fjYmkxdlEgQ8STwevn5S48fkvi/03asITmBkaYAMPrUgO8VNSQkSPHIEuc3oTLXgh+JwH0UQ==
   dependencies:
     object-assign "^4.1.1"
 
-"@primer/primitives@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@primer/primitives/-/primitives-4.0.1.tgz#87dae25cc075dd1b38a06d5d91bdfd4b22ea1abf"
-  integrity sha512-TFbO/duRByLSGsCuDRo5Qgd+NOZmMKCB+au32ZHgGfn9KDdlGbbwvGKOx6c56jRWDCHk27aRL2bG4Hc9tFgHpA==
+"@primer/primitives@4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@primer/primitives/-/primitives-4.2.0.tgz#a54d052bd8b8fcc0a2f5029f44a192939f87f09f"
+  integrity sha512-/2/9ueCWWzqaLRSJ3TNGthMVX8DBn/oa+ZY9eB/TmxUPglXd8AQMxV2wz+pAoy8SpXXwe84JuEgHTAghzAOh0w==
 
 "@sentry/core@5.30.0":
   version "5.30.0"
