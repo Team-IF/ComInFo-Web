@@ -14,7 +14,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/vue-fontawesome": "^3.0.0-3",
     "@popperjs/core": "^2.9.2",
-    "@primer/css": "^17.0.1",
+    "@primer/css": "^17.0.2",
     "axios": "^0.21.1",
     "bluebird": "^3.7.2",
     "bootstrap": "^5.0.0",
@@ -30,6 +30,6 @@
     "@vuedx/typecheck": "^0.6.0",
     "@vuedx/typescript-plugin-vue": "^0.6.0",
     "typescript": "^4.2.4",
-    "vite": "^2.2.4"
+    "vite": "^2.3.3"
   }
 }
