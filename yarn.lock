@@ -220,17 +220,17 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.2.tgz#adea7b6953cbb34651766b0548468e743c6a2353"
   integrity sha512-VZMYa7+fXHdwIq1TDhSXoVmSPEGM/aa+6Aiq3nVVJ9bXr24zScr+NlKFKC3iPljA7ho/GAZr+d2jOf5GIRC30Q==
 
-"@primer/css@^17.0.2":
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/@primer/css/-/css-17.0.2.tgz#49d244712f24a3289f660612eeafccdd1d00dc64"
-  integrity sha512-Y5l2vUBPsl41d9lFl+F5tsRYeKV94s+A3TCVPTZNb+NgGKfnCWkQhEdVf/0n4VriuVn6YsRDQMihDzhfC16DXw==
+"@primer/css@^20.7.1":
+  version "20.7.1"
+  resolved "https://registry.yarnpkg.com/@primer/css/-/css-20.7.1.tgz#67b8e6bf9063aec71a1888eed704005a5ef5b0c1"
+  integrity sha512-NcTKs6PZtT7btF8GlYvoRMq8XBJ8TWGA8VBPG+dAYHm/38gx8JwKSiZG0Dt2Ue1AYoV/75Slp/mUPDnFCmbOOQ==
   dependencies:
-    "@primer/primitives" "4.3.3"
+    "@primer/primitives" "^7.9.0"
 
-"@primer/primitives@4.3.3":
-  version "4.3.3"
-  resolved "https://registry.yarnpkg.com/@primer/primitives/-/primitives-4.3.3.tgz#9cbeffd76f27c98e2dda33eb9a5a9b1a1d674dbe"
-  integrity sha512-S2VvxGQBnKhggTqY6hQSNf/nyH4KR0mJp3H2/bWTKR/RM7ptCo+ajxgxmW16WaDTIQ2cvrHeqTD/qnuZ8yf6bg==
+"@primer/primitives@^7.9.0":
+  version "7.10.0"
+  resolved "https://registry.yarnpkg.com/@primer/primitives/-/primitives-7.10.0.tgz#de0d9648d484184442583564f02d6600b872fa5f"
+  integrity sha512-DdLHq21e93R9qDHyRuRpytBLY0Up9IwNWMOUgPNW6lRSng4N4+IdUlLS3Ekbasmxfs8Z8vKS8aezeYovQ5qsxQ==
 
 "@sentry/core@5.30.0":
   version "5.30.0"
